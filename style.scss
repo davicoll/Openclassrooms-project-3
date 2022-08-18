@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-
 * {
 
     box-sizing: border-box;
@@ -10,3 +9,48 @@
     font-family: "Roboto";
    
    }
+
+@import '_variables';
+@import '_elements';
+
+body{
+    margin: 0px;
+}
+
+.banner{
+    @extend %banner;
+    box-shadow: 0px 3px 30px 10px $grey-light;
+    
+}
+
+.search-container{
+    background-color: $grey-lighter;
+}
+
+.search-city{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ville-search{
+    border: none;
+    background-color: $grey-lighter;
+    color: $black;
+    text-align: center;
+    font-size: $md;
+    margin: 12px 0px;
+}
+
+.second-background{
+    background-color: $grey-background;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+   
+
+

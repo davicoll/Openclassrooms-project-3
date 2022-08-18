@@ -15,27 +15,31 @@
 
             <!--Menu search city-->
 
-            <div class="city">
-                <div class="dot"><i class="fa-solid fa-location-dot"></i></div>
-                <div class="search">
+            <div class="search-container">
+                <div class="search-form">
                     <form method="post" action="traitement.php">
-                        <input type="text" name="ville_search" id=""ville_search" value="Paris, Belleville"/>
+                        <div class="search-city">
+                            <label class="search-dot"><i class="fa-solid fa-location-dot"></i></label>
+                            <input type="text" name="ville-search" id="ville-search" value="Paris, Belleville"/>
+                        </div>
+                        <div class="second-background">
+                            <h2>Réservez le menu qui vous convient</h2>
+                            <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins</h3>
 
-                        <!--SEARCH button????-->
+                        <!--SEARCH button-->
+                            <button class="button" type="submit" name="explorer" id="explorer" >Explorer nos restaurants</button>
+
+                        </div>
 
                     </form>
                 </div>
             </div>
 
-            <div class="explore">
-                <h2>Réservez le menu qui vous convient</h2>
-                <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins</h3>
-                <div class="explorer_resto">
-                    <p>Explorer nos restaurants</p>
-                </div>
-            </div>
+        
 
         </header>
+
+        <!---MENU Fonctionement-->
 
 
             <section class="fonction">
@@ -62,70 +66,64 @@
             
             </section>
 
-            <section class="restaurants"> 
+            <!--RESTAURANT selection-->
+
+            <section class="card-container"> 
                 
-                <div class="resto">
-                    <div class="resto_photo">
-                        <img src="#"/>
-                        <img scr="#"/> <!--Image "nouveau"-->
-                    </div>
-                    <div class="resto_text">
-                        <div class="resto_text_box">
+                <div class="card">
+                    <img class="card-photo" src="images/restaurants/palette.jpg" alt="photo de plat haute gastronomie"/>
+                    <img src="#"/> <!--Image "nouveau"-->
+                    <div class="card-info">
+                        <div class="card-info-text">
                             <p>La palette du gôut</p>
                             <p>Ménilmontant</p>
                         </div>
-                        <div class="heart">
+                        <div class="card-info-icon">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
                 </div>
             
-                <div class="resto">
-                    <div class="resto_photo">
-                        <img src="#"/>
-                        <img scr="#"/> <!--Image "nouveau"-->
-                    </div>
-                    <div class="resto_text">
-                        <div class="resto_text_box">
+                <div class="card">
+                    <img class="card-photo" src="images/restaurants/note.jpg" alt="photo de plat haute gastronomie"/>
+                    <img src="#"/> <!--Image "nouveau"-->
+                    <div class="card-info">
+                        <div class="card-info-text">
                             <p>La note enchantée</p>
                             <p>Charonne</p>
                         </div>
-                        <div class="heart">
+                        <div class="card-info-icon">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="resto">
-                    <div class="resto_photo">
-                        <img src="#"/>
-                        <img scr="#"/> <!--Image "nouveau"-->
-                    </div>
-                    <div class="resto_text">
-                        <div class="resto_text_box">
+                <div class="card">
+                    <img  class="card-photo" src="images/restaurants/fraçaise.jpg" alt="photo de plat haute gastronomie"/>
+                    <img src="#"/> <!--Image "nouveau"-->
+                    <div class="card-info">
+                        <div class="card-info-text">
                             <p>À la française</p>
                             <p>Cité Rouge</p>
                         </div>
-                        <div class="heart">
+                        <div class="card-info-icon">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="resto">
-                    <div class="resto_photo">
-                        <img src="#"/>
-                        <img scr="#"/> <!--Image "nouveau"-->
-                    </div>
-                    <div class="resto_text">
-                        <div class="resto_text_box">
+                <div class="card">
+                    <img class="card-photo" src="images/restaurants/delice.jpg" alt="photo de plat haute gastronomie"/>
+                    <img src="#"/> <!--Image "nouveau"-->
+                    <div class="card-info">
+                        <div class="card-info-text">
                             <p>Le délice des sens</p>
                             <p>Folie-Méricourt</p>
                         </div>
-                        <div class="heart">
+                        <div class="card-info-icon">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -133,8 +131,10 @@
                 </div>
             </section>
 
+            <!--FOOTER-->
+
             <footer>
-                <h1 class="footer_title">ohmyfood</h1>
+                <h1 class="footer-title">ohmyfood</h1>
                 <div><a href="#">
                     <i class="fa-solid fa-utensils"></i>
                     <div>Proposer un restaurant</div></a>

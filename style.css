@@ -1,19 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
-
-    box-sizing: border-box;
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
-    font-family: "Roboto";
-   
-   }
-
-.banner h1{
-    font-family: 'shrikhand';
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Roboto";
 }
 
+.banner {
+  background-color: white;
+  color: black;
+  text-align: center;
+  min-width: 100%;
+}
+.banner h1 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  margin: 0px 0px 3px 0px;
+  padding: 15px 0px 8px 0px;
+}
 
+.button {
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  border: 0px;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 1px 2.5px 8px #c0c0c0;
+}
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 1px 1px 8px #e7e7e7;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card .card-photo {
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0px;
+}
+
+.banner {
+  box-shadow: 0px 3px 30px 10px #c0c0c0;
+}
+
+.search-container {
+  background-color: #e7e7e7;
+}
+
+.search-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#ville-search {
+  border: none;
+  background-color: #e7e7e7;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 12px 0px;
+}
+
+.second-background {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
