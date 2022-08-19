@@ -5,6 +5,15 @@
     color: $black;
     text-align: center;
     min-width: 100%;
+    position: relative;
+    z-index: 15;
+}
+
+%menu-card{
+    border-radius: 20px;
+    box-shadow: 1px 2.5px 8px $grey-light;
+    
+}
 
    
     h1{
@@ -13,7 +22,7 @@
         margin: 0px 0px 3px 0px;
         padding: 15px 0px 8px 0px;
     }
-}
+
 
 
 //Pink-purple button
@@ -25,7 +34,8 @@
     padding: 15px 25px;
     border-radius: 30px;
     font-size: $md;
-    box-shadow: 1px 2.5px 8px $grey-light ;
+    box-shadow: 1px 2.5px 8px $grey-light;
+    font-weight: 400;
 
 }
 
@@ -59,6 +69,38 @@
         align-items: center;
     }
     
+}
+
+//FOOTER
+
+footer{
+    background-color: $grey;
+    color: $white;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-top: $base-margin;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    h1{
+        font-family: 'Shrikhand';
+        font-size:$lg;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+
+    }
+    .footer-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
 
 

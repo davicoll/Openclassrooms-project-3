@@ -1,15 +1,16 @@
 //colors
 
 $primary:#9356DC;
+$primary-light:#f5edff;
 $secondary: #FF79DA;
 $tertiary: #99E2D0; 
 $tertiary-dark: #008766;
 $white: white;
 $black: black;
-$grey: #292929;
+$grey: #353535;
 $grey-light: #c0c0c0;
-$grey-lighter: #e7e7e7;
-$grey-background: #f3f3f3;
+$grey-lighter: #e8e8e8;
+$grey-background:#f6f6f6;
 
 
 //fonts
@@ -18,5 +19,10 @@ $sm: 13px;
 $md: 16px; 
 $lg: 18px;
 $xl: 22px;
+$xl-2: 24px;
 $xxl: 28px;
 
+//margin
+
+$base-margin: 40px;
+$lg-margin: 50px;

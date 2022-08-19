@@ -7,6 +7,7 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
     font-family: "Roboto";
+    font-weight:300;
    
    }
 
@@ -19,12 +20,16 @@ body{
 
 .banner{
     @extend %banner;
-    box-shadow: 0px 3px 30px 10px $grey-light;
+    box-shadow: 0px 1px 5px 1px $grey-light;
     
 }
 
+//SEARCH
+
 .search-container{
     background-color: $grey-lighter;
+    position: relative;
+    z-index: 5;
 }
 
 .search-city{
@@ -49,6 +54,68 @@ body{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    h2{
+        margin-left:$lg-margin;
+        margin-right: $lg-margin;
+        font-weight: 500;
+    }
+    h3{
+        margin-left: $base-margin;
+        margin-right: $base-margin;
+        font-weight: 200;
+    }
+    
+}
+
+//Fonctionement
+
+.fonction{
+    margin-left: 25px;
+
+    h2{
+        font-weight: 500;
+        font-size: $xl-2;
+    }
+}
+
+.fonction-button{
+    @extend %menu-card;
+    max-width: 88%;
+    background-color: $grey-background;
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0px 30px 10px;
+
+    &:hover{
+        background-color: $primary-light;
+        i {
+            color: $primary;
+        }
+    }
+
+    .number{
+        background-color: $primary;
+        border-radius: 50%;
+        padding: 8px;
+        margin-left: -15px;
+        color: $white;
+        font-size: 14px;
+        text-align: center;
+     
+         
+
+    }
+    i, p{
+        color: $grey;
+    }
+    p{
+        font-weight: 500;
+    }
+   
 }
 
    

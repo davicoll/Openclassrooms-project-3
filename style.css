@@ -5,6 +5,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: "Roboto";
+  font-weight: 300;
 }
 
 .banner {
@@ -12,8 +13,16 @@
   color: black;
   text-align: center;
   min-width: 100%;
+  position: relative;
+  z-index: 15;
 }
-.banner h1 {
+
+.fonction-button {
+  border-radius: 20px;
+  box-shadow: 1px 2.5px 8px #c0c0c0;
+}
+
+h1 {
   font-family: "Shrikhand";
   font-size: 28px;
   margin: 0px 0px 3px 0px;
@@ -28,6 +37,7 @@
   border-radius: 30px;
   font-size: 16px;
   box-shadow: 1px 2.5px 8px #c0c0c0;
+  font-weight: 400;
 }
 
 .card-container {
@@ -39,7 +49,7 @@
 
 .card {
   background-color: white;
-  box-shadow: 1px 1px 8px #e7e7e7;
+  box-shadow: 1px 1px 8px #e8e8e8;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -57,16 +67,46 @@
   align-items: center;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer h1 {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
 body {
   margin: 0px;
 }
 
 .banner {
-  box-shadow: 0px 3px 30px 10px #c0c0c0;
+  box-shadow: 0px 1px 5px 1px #c0c0c0;
 }
 
 .search-container {
-  background-color: #e7e7e7;
+  background-color: #e8e8e8;
+  position: relative;
+  z-index: 5;
 }
 
 .search-city {
@@ -78,7 +118,7 @@ body {
 
 #ville-search {
   border: none;
-  background-color: #e7e7e7;
+  background-color: #e8e8e8;
   color: black;
   text-align: center;
   font-size: 16px;
@@ -86,8 +126,59 @@ body {
 }
 
 .second-background {
-  background-color: #f3f3f3;
+  background-color: #f6f6f6;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.second-background h2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: 500;
+}
+.second-background h3 {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 200;
+}
+
+.fonction {
+  margin-left: 25px;
+}
+.fonction h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.fonction-button {
+  max-width: 88%;
+  background-color: #f6f6f6;
+  padding: 8px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0px 30px 10px;
+}
+.fonction-button:hover {
+  background-color: #f5edff;
+}
+.fonction-button:hover i {
+  color: #9356DC;
+}
+.fonction-button .number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 8px;
+  margin-left: -15px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.fonction-button i, .fonction-button p {
+  color: #353535;
+}
+.fonction-button p {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
