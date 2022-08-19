@@ -20,8 +20,32 @@ body{
 
 .banner{
     @extend %banner;
-    box-shadow: 0px 1px 5px 1px $grey-light;
+    box-shadow: $standard-shadow;
     
+}
+
+.banner-menu{
+    @extend %banner;
+    display:flex;
+    flex-direction: row;
+    justify-content : stretch;
+    align-items: center;
+    h1{
+        flex-grow: 3;
+        width: 90%;
+        padding-right: 45px;
+    }
+    i{
+        padding-left: 20px;
+    }    
+}
+.banner-photo{
+    display: flex;
+    img{
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 300px;
+    }
 }
 
 //SEARCH
@@ -100,14 +124,11 @@ body{
     .number{
         background-color: $primary;
         border-radius: 50%;
-        padding: 8px;
+        padding: 8px 12px;
         margin-left: -15px;
         color: $white;
         font-size: 14px;
         text-align: center;
-     
-         
-
     }
     i, p{
         color: $grey;
@@ -116,6 +137,84 @@ body{
         font-weight: 500;
     }
    
+}
+
+//// RESTAURANTS CARDS//////
+/// 
+/// 
+.card-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: $grey-background;
+    padding-bottom: 70px;
+
+    h2{
+        align-self: flex-start;
+        margin: 45px 0px 0px 20px;
+        font-weight: 500;
+        font-size: $xl-2;
+
+    }
+}
+
+
+
+.card{
+    box-shadow: $standard-shadow;
+    background-color: $white;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+
+
+    &-photo{
+        min-width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    
+    }
+    &-info{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100%;
+        padding: 0px 20px;
+        font-size: $lg;
+       
+        p:nth-child(1){
+            font-weight: 500;
+            margin: 15px 0px 5px 0px;
+        }
+        p:nth-child(2){
+            margin:0px 0px 15px 0px;
+        }
+        &-icon{
+            font-size:$xl-2;
+        }
+    }
+
+    &-nouveau{
+        box-shadow: $standard-shadow;
+        color: $tertiary-dark;
+        background-color: $tertiary;
+        padding: 6px;
+        width: 90px;
+        text-align: center;
+        font-weight: 400;
+        font-size: $md;
+        border-radius: 3px;
+        position: relative;
+        bottom: 120px;
+        left: 230px;
+
+    }
+    
 }
 
    

@@ -9,9 +9,12 @@
     z-index: 15;
 }
 
+
+
 %menu-card{
+    box-shadow:$standard-shadow;
     border-radius: 20px;
-    box-shadow: 1px 2.5px 8px $grey-light;
+    
     
 }
 
@@ -28,48 +31,18 @@
 //Pink-purple button
 
 .button{
+    box-shadow:$standard-shadow;
     background-image: linear-gradient(to top left, $primary, $secondary);
     border: 0px;
     color: $white;
     padding: 15px 25px;
     border-radius: 30px;
     font-size: $md;
-    box-shadow: 1px 2.5px 8px $grey-light;
     font-weight: 400;
 
 }
 
-//restaurant cards
 
-.card-container{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card{
-    background-color: $white;
-    box-shadow: 1px 1px 8px $grey-lighter ;
-    border-radius: 20px;
-    display:flex;
-    flex-direction: column;
-
-    .card-photo{
-        max-width: 100%;
-        border-radius: 20px 20px 0px 0px;
-        object-fit: cover;
-        
-        
-    }
-    .card-info{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-}
 
 //FOOTER
 
@@ -78,7 +51,6 @@ footer{
     color: $white;
     padding: 20px;
     padding-bottom: 40px;
-    margin-top: $base-margin;
     display: flex;
     flex-direction:column;
     gap: 10px;
