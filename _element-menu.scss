@@ -1,0 +1,115 @@
+.banner-menu{
+    @extend %banner;
+    display:flex;
+    flex-direction: row;
+    justify-content : stretch;
+    align-items: center;
+    h1{
+        flex-grow: 3;
+        width: 90%;
+        padding-right: 45px;
+    }
+    i{
+        padding-left: 20px;
+    }
+    a{
+        color: inherit;
+    }    
+}
+.banner-photo{
+    display: flex;
+    img{
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 250px;
+    margin-bottom: 0px;
+    }
+}
+
+.menu{
+    background-color: $grey-background;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 20;
+    
+    &-rest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 5px 15px;
+        h2{
+        font-family: "shrikhand";
+        font-size: 26px;
+        }
+    }
+ 
+    &-epd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        h2{
+        font-size:$md;
+        align-self: flex-start;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid $tertiary;
+        padding-bottom: 5px;
+        text-overflow: visible;
+        width: 10%;
+        }
+    }
+
+    &-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 92%;
+    margin-bottom: 30px;
+        &-item{
+        @extend %menu-card;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0px 25px 0px 10px;
+        width: 100%;
+            &-text{
+                max-width: 80%;
+                p{
+                    margin: 5px 0px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                p:nth-child(1){
+                    font-weight: 500;
+                    font-size: $lg;
+                    margin-top: 12px;
+                }
+                p:nth-child(2){
+                    font-size: 15px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            &-price{
+                p{
+                font-weight: 500;
+                font-size: $md;
+                }
+            }
+        }
+    }
+}
+
+ .button-menu{
+    margin: 30px auto 70px auto;
+    min-width: 50%;
+ }
+
+   
+
+
