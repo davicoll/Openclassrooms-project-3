@@ -22,8 +22,15 @@ body {
 }
 
 .menu-cards-item, .fonction-button {
-  box-shadow: 1px 2.5px 10px #c0c0c0;
+  box-shadow: 2px 3px 12px 0px #cecece;
   border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -34,7 +41,7 @@ h1 {
 }
 
 .button {
-  box-shadow: 1px 2.5px 10px #c0c0c0;
+  box-shadow: 2px 3px 12px 0px #cecece;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   border: 0px;
   color: white;
@@ -43,12 +50,15 @@ h1 {
   font-size: 16px;
   font-weight: 400;
 }
+.button:hover {
+  box-shadow: 2px 3px 12px 0px #c0c0c0;
+  background-image: linear-gradient(to top left, #a682d3, #fdb2e7);
+}
 
 footer {
   background-color: #353535;
   color: white;
-  padding: 20px;
-  padding-bottom: 40px;
+  padding: 10px 20px 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -72,7 +82,7 @@ footer .footer-item {
 }
 
 .banner {
-  box-shadow: 1px 2.5px 10px #c0c0c0;
+  box-shadow: 2px 3px 12px 0px #cecece;
 }
 
 .search-container {
@@ -101,7 +111,7 @@ footer .footer-item {
   background-color: #f6f6f6;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .second-background h2 {
   margin-left: 50px;
@@ -116,6 +126,7 @@ footer .footer-item {
 
 .fonction {
   margin-left: 25px;
+  padding-bottom: 40px;
 }
 .fonction h2 {
   font-weight: 500;
@@ -131,7 +142,7 @@ footer .footer-item {
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
-  margin: 30px 0px 30px 10px;
+  margin: 20px 0px 20px 10px;
 }
 .fonction-button:hover {
   background-color: #f5edff;
@@ -172,16 +183,23 @@ footer .footer-item {
 }
 
 .card {
-  box-shadow: 1px 2.5px 10px #c0c0c0;
+  box-shadow: 2px 3px 12px 0px #cecece;
   background-color: white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 90%;
+  margin: 0px;
+  padding: 0px;
 }
 .card-photo {
-  min-width: 100%;
+  width: 100%;
+  max-height: 160px;
+  display: flex;
+}
+.card-photo img {
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -205,19 +223,21 @@ footer .footer-item {
 .card-info-icon {
   font-size: 24px;
 }
+.card-info-icon i:nth-child(2) {
+  color: linear-gradient(#9356DC, #FF79DA);
+}
 .card-nouveau {
-  box-shadow: 1px 2.5px 10px #c0c0c0;
   color: #008766;
   background-color: #99E2D0;
   padding: 6px;
   width: 90px;
+  height: 30px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
   border-radius: 3px;
-  position: relative;
-  bottom: 120px;
-  left: 230px;
+  margin-left: -110px;
+  margin-top: 15px;
 }
 
 .banner-menu {
@@ -319,6 +339,23 @@ footer .footer-item {
 .menu-cards-item-price p {
   font-weight: 500;
   font-size: 16px;
+}
+.menu-cards-item-check {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 70px;
+  text-align: center;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+}
+.menu-cards-item-check i {
+  display: inline-block;
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 100%;
+  padding: 3px;
 }
 
 .button-menu {

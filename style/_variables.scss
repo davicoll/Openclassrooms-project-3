@@ -1,14 +1,17 @@
 //colors
 
 $primary:#9356DC;
+$primary-button:#a682d3;
 $primary-light:#f5edff;
 $secondary: #FF79DA;
+$secondary-light:#fdb2e7;
 $tertiary: #99E2D0; 
 $tertiary-dark: #008766;
 $white: white;
 $black: black;
 $grey: #353535;
 $grey-light: #c0c0c0;
+$grey-shadow: #cecece;
 $grey-lighter: #e8e8e8;
 $grey-background:#f6f6f6;
 
@@ -30,5 +33,5 @@ $lg-margin: 50px;
 //shaddow
 
 
-$standard-shadow: 1px 2.5px 10px $grey-light;
+$standard-shadow:  2px 3px 12px 0px $grey-shadow;
 

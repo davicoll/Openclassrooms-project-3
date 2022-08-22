@@ -33,7 +33,7 @@
     background-color: $grey-background;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     h2{
         margin-left:$lg-margin;
         margin-right: $lg-margin;
@@ -51,6 +51,7 @@
 
 .fonction{
     margin-left: 25px;
+    padding-bottom: 40px;
 
     h2{
         font-weight: 500;
@@ -68,7 +69,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
-    margin: 30px 0px 30px 10px;
+    margin: 20px 0px 20px 10px;
 
     &:hover{
         background-color: $primary-light;
@@ -107,6 +108,7 @@
     background-color: $grey-background;
     padding-bottom: 70px;
 
+
     h2{
         align-self: flex-start;
         margin: 45px 0px 0px 20px;
@@ -126,14 +128,23 @@
     flex-direction: column;
     justify-content: center;
     max-width: 90%;
+    margin: 0px;
+    padding: 0px;
 
 
     &-photo{
-        min-width: 100%;
-        border-radius: 20px 20px 0px 0px;
-        object-fit: cover;
+        width: 100%;
+        max-height: 160px;
+        display: flex;
     
+        img{
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            object-fit: cover;
+            
+        }
     }
+
     &-info{
         display:flex;
         flex-direction: row;
@@ -152,22 +163,24 @@
         }
         &-icon{
             font-size:$xl-2;
+            i:nth-child(2){
+                color: linear-gradient($primary, $secondary); //ISSUES////////////////////
+            }
         }
     }
 
     &-nouveau{
-        box-shadow: $standard-shadow;
         color: $tertiary-dark;
         background-color: $tertiary;
         padding: 6px;
         width: 90px;
+        height: 30px;
         text-align: center;
         font-weight: 400;
         font-size: $md;
         border-radius: 3px;
-        position: relative;
-        bottom: 120px;
-        left: 230px;
+        margin-left: -110px;
+        margin-top: 15px;
 
     }
     

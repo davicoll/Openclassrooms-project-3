@@ -101,6 +101,27 @@
                 font-size: $md;
                 }
             }
+            
+///////////////check animation//////////////////
+            &-check{
+                display: none; ///FLEX//////
+                justify-content: center;
+                align-items: center;
+                min-width: 60px;
+                height: 70px;
+                text-align: center;
+                border-radius: 0px 15px 15px 0px;
+                background-color: $tertiary;
+                i{
+                    display: inline-block;
+                    background-color: $white;
+                    color: $tertiary;
+                    border-radius: 100%;
+                    padding: 3px;
+                }
+                
+
+            }
         }
     }
 }
