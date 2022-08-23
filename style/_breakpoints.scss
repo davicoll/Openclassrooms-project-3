@@ -1,0 +1,6 @@
+@mixin breakpoint ($key) {
+    @media (min-width: $key){
+        @content;
+    }
+        
+    }

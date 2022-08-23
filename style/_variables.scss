@@ -1,10 +1,8 @@
 //colors
 
 $primary:#9356DC;
-$primary-button:#a682d3;
 $primary-light:#f5edff;
 $secondary: #FF79DA;
-$secondary-light:#fdb2e7;
 $tertiary: #99E2D0; 
 $tertiary-dark: #008766;
 $white: white;
@@ -32,6 +30,10 @@ $lg-margin: 50px;
 
 //shaddow
 
-
 $standard-shadow:  2px 3px 12px 0px $grey-shadow;
+
+//breakpoints:
+
+$tablet: 600px;
+$desktop: 770px;
 

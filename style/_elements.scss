@@ -46,7 +46,7 @@ a{
     font-weight: 400;
     &:hover{
         box-shadow: 2px 3px 12px 0px $grey-light;
-        background-image: linear-gradient(to top left, $primary-button, $secondary-light);
+        background-image: linear-gradient(to top left, lighten($primary ,5), lighten($secondary, 5));
 
     }
 
@@ -63,26 +63,51 @@ footer{
     display: flex;
     flex-direction:column;
     gap: 10px;
+    @include breakpoint ($tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: center;
+        padding-left: 80px;
+    }
+   
+
+
     h1{
         font-family: 'Shrikhand';
         font-size:$lg;
         margin-bottom: 10px;
         margin-top: 0px;
+        @include breakpoint ($tablet){
+            min-width: 100%;
+            font-size: $xl;
+    
+        }
     }
     a{
         color: $white;
         text-decoration: none;
+        @include breakpoint($tablet){
+            font-size: $lg;
+        }
     
 
     }
-    .footer-item{
+    &-item{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 10px;
+          
+
     }
 
+}
+.footer-item-x{
+    @include breakpoint ($tablet){
+        min-width: 50%;
+    }
 }
 
 

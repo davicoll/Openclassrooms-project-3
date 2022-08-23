@@ -53,10 +53,26 @@
     margin-left: 25px;
     padding-bottom: 40px;
 
+    @include breakpoint($tablet){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        gap: 20px;
+        
+    }
+  
     h2{
         font-weight: 500;
         font-size: $xl-2;
+        @include breakpoint($tablet){
+            min-width: 80%;
+            text-align: center;
+            
+        }
     }
+
 }
 
 .fonction-button{
@@ -93,6 +109,12 @@
     p{
         font-weight: 500;
     }
+
+    @include breakpoint ($tablet){
+        margin: 0px 0px 10px 0px;
+        gap: 10px;
+        padding-right: 35px;
+    }
    
 }
 
@@ -107,6 +129,13 @@
     gap: 20px;
     background-color: $grey-background;
     padding-bottom: 70px;
+    @include breakpoint ($tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
 
 
     h2{
@@ -114,6 +143,12 @@
         margin: 45px 0px 0px 20px;
         font-weight: 500;
         font-size: $xl-2;
+        @include breakpoint ($tablet) {
+            min-width: 90%;
+            margin-bottom: 30px;
+            margin-left: 40px;
+      
+        }
 
     }
 }
@@ -130,6 +165,11 @@
     max-width: 90%;
     margin: 0px;
     padding: 0px;
+    @include breakpoint ($tablet) {
+        min-width: 270px;
+        max-width: 45%;
+
+    }
 
 
     &-photo{
