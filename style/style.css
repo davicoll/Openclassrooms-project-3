@@ -72,6 +72,13 @@ footer {
     padding-left: 80px;
   }
 }
+@media (min-width: 770px) {
+  footer {
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-left: 60px;
+  }
+}
 footer h1 {
   font-family: "Shrikhand";
   font-size: 18px;
@@ -93,6 +100,11 @@ footer a {
     font-size: 18px;
   }
 }
+@media (min-width: 770px) {
+  footer a {
+    max-width: 20%;
+  }
+}
 footer-item {
   display: flex;
   flex-direction: row;
@@ -104,6 +116,11 @@ footer-item {
 @media (min-width: 600px) {
   .footer-item-x {
     min-width: 50%;
+  }
+}
+@media (min-width: 770px) {
+  .footer-item-x {
+    min-width: 10%;
   }
 }
 
@@ -335,8 +352,13 @@ footer-item {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  min-height: 250px;
+  min-height: 230px;
   margin-bottom: 0px;
+}
+@media (min-width: 600px) {
+  .banner-photo {
+    max-height: 200px;
+  }
 }
 
 .menu {
@@ -351,6 +373,7 @@ footer-item {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 5px 40px 5px 15px;
 }
 .menu-rest h2 {
@@ -362,16 +385,6 @@ footer-item {
   flex-direction: column;
   align-items: center;
 }
-.menu-epd h2 {
-  font-size: 16px;
-  align-self: flex-start;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 5px;
-  text-overflow: visible;
-  width: 10%;
-}
 .menu-cards {
   display: flex;
   flex-direction: column;
@@ -380,6 +393,37 @@ footer-item {
   width: 92%;
   margin-bottom: 30px;
 }
+@media (min-width: 770px) {
+  .menu-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+  }
+}
+@media (min-width: 770px) and (min-width: 770px) {
+  .menu-cards a {
+    width: 31%;
+  }
+}
+@media (min-width: 770px) {
+  .menu-cards-title {
+    min-width: 100%;
+  }
+}
+.menu-cards h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  text-overflow: visible;
+  width: 10%;
+}
+@media (min-width: 770px) {
+  .menu-cards h2 {
+    width: 5%;
+  }
+}
 .menu-cards-item {
   display: flex;
   flex-direction: row;
@@ -387,6 +431,11 @@ footer-item {
   align-items: flex-end;
   padding: 0px 25px 0px 10px;
   width: 100%;
+}
+@media (min-width: 770px) {
+  .menu-cards-item {
+    min-width: 100%;
+  }
 }
 .menu-cards-item-text {
   max-width: 80%;
@@ -431,4 +480,9 @@ footer-item {
 .button-menu {
   margin: 30px auto 70px auto;
   min-width: 50%;
+}
+@media (min-width: 770px) {
+  .button-menu {
+    min-width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */

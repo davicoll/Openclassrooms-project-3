@@ -63,12 +63,20 @@ footer{
     display: flex;
     flex-direction:column;
     gap: 10px;
+
     @include breakpoint ($tablet) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: stretch;
         align-items: center;
         padding-left: 80px;
+    }
+
+    @include breakpoint ($desktop){
+        justify-content: space-between;
+        padding-right: 80px;
+        padding-left: 60px;
+
     }
    
 
@@ -90,6 +98,9 @@ footer{
         @include breakpoint($tablet){
             font-size: $lg;
         }
+        @include breakpoint($desktop){
+            max-width: 20%;
+        }
     
 
     }
@@ -98,15 +109,17 @@ footer{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 10px;
-          
-
+        gap: 10px; 
     }
+
 
 }
 .footer-item-x{
     @include breakpoint ($tablet){
         min-width: 50%;
+    }
+    @include breakpoint ($desktop){
+        min-width: 10%;
     }
 }
 

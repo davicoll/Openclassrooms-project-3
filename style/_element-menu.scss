@@ -21,8 +21,12 @@
     img{
     object-fit: cover;
     max-width: 100%;
-    min-height: 250px;
+    min-height: 230px;
     margin-bottom: 0px;
+    }
+
+    @include breakpoint($tablet){
+        max-height: 200px;
     }
 }
 
@@ -38,6 +42,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 5px 40px 5px 15px;
         h2{
         font-family: "shrikhand";
@@ -48,17 +53,8 @@
     &-epd{
     display: flex;
     flex-direction: column;
-    align-items: center;
-        h2{
-        font-size:$md;
-        align-self: flex-start;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        border-bottom: 3px solid $tertiary;
-        padding-bottom: 5px;
-        text-overflow: visible;
-        width: 10%;
-        }
+    align-items: center;       
+ 
     }
 
     &-cards{
@@ -68,6 +64,40 @@
     gap: 20px;
     width: 92%;
     margin-bottom: 30px;
+
+    @include breakpoint($desktop){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 95%;
+    a{
+    @include breakpoint($desktop){
+        width: 31%;
+    }
+    }
+    }
+        &-title{
+        @include breakpoint($desktop){
+        min-width: 100%;
+        }
+    
+        }
+        
+
+        h2{
+        font-size:$md;
+        margin-bottom: 20px;
+        border-bottom: 3px solid $tertiary;
+        padding-bottom: 5px;
+        text-overflow: visible;
+        width: 10%;
+        
+        @include breakpoint($desktop){
+            width: 5%;
+        }
+
+        }
+
         &-item{
         @extend %menu-card;
         display: flex;
@@ -76,6 +106,13 @@
         align-items: flex-end;
         padding: 0px 25px 0px 10px;
         width: 100%;
+
+        @include breakpoint($desktop){
+            min-width: 100%;
+            
+        }
+
+       
             &-text{
                 max-width: 80%;
                 p{
@@ -129,6 +166,10 @@
  .button-menu{
     margin: 30px auto 70px auto;
     min-width: 50%;
+    
+    @include breakpoint ($desktop){
+        min-width: 30%;
+    }
  }
 
    
