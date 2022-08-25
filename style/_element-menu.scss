@@ -5,7 +5,7 @@
     justify-content : stretch;
     align-items: center;
     h1{
-        flex-grow: 3;
+        
         width: 90%;
         padding-right: 45px;
     }
@@ -42,11 +42,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: $gap2;
     padding: 5px 40px 5px 15px;
         h2{
         font-family: "shrikhand";
-        font-size: 26px;
+        font-size: $xl-3;
         }
     }
  
@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: $gap2;
     width: 92%;
     margin-bottom: 30px;
 
@@ -104,9 +104,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 0px 25px 0px 10px;
+        padding: 0px 0px 0px 10px;
         width: 100%;
 
+    
         @include breakpoint($desktop){
             min-width: 100%;
             
@@ -127,18 +128,42 @@
                     margin-top: 12px;
                 }
                 p:nth-child(2){
-                    font-size: 15px;
+                    font-size: $xxm;
                     margin-bottom: 12px;
                 }
+               
             }
 
             &-price{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 5px;
                 p{
                 font-weight: 500;
                 font-size: $md;
+                padding-right: 25px;
+                
                 }
+               
+                
+           
             }
-            
+       
+            &:hover  .menu-cards-item-check{
+                display: flex;
+            }
+            &:hover .menu-cards-item-text{
+                max-width: 50%;
+            }
+            &:hover .menu-cards-item-price p{
+                max-width: 30px;
+
+            }
+           
+
+     
 ///////////////check animation//////////////////
             &-check{
                 display: none; ///FLEX//////
@@ -149,6 +174,7 @@
                 text-align: center;
                 border-radius: 0px 15px 15px 0px;
                 background-color: $tertiary;
+            
                 i{
                     display: inline-block;
                     background-color: $white;
@@ -156,12 +182,14 @@
                     border-radius: 100%;
                     padding: 3px;
                 }
+           
                 
 
             }
         }
     }
 }
+
 
  .button-menu{
     margin: 30px auto 70px auto;

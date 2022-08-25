@@ -45,7 +45,7 @@ a{
     font-size: $md;
     font-weight: 400;
     &:hover{
-        box-shadow: 2px 3px 12px 0px $grey-light;
+        box-shadow: $hover-shadow;
         background-image: linear-gradient(to top left, lighten($primary ,5), lighten($secondary, 5));
 
     }
@@ -62,7 +62,7 @@ footer{
     padding: 10px 20px 40px 20px;
     display: flex;
     flex-direction:column;
-    gap: 10px;
+    gap: $gap1;
 
     @include breakpoint ($tablet) {
         flex-direction: row;
@@ -109,7 +109,7 @@ footer{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 10px; 
+        gap: $gap1; 
     }
 
 

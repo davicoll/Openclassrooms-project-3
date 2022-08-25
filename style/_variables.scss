@@ -17,10 +17,13 @@ $grey-background:#f6f6f6;
 //fonts
 
 $sm: 13px;
+$xm: 14px;
+$xxm: 15px;
 $md: 16px; 
 $lg: 18px;
 $xl: 22px;
 $xl-2: 24px;
+$xl-3: 26px;
 $xxl: 28px;
 
 //margin
@@ -28,9 +31,16 @@ $xxl: 28px;
 $base-margin: 40px;
 $lg-margin: 50px;
 
+//gap
+
+$gap1: 10px;
+$gap2: 20px;
+$gap3: 30px;
+
 //shaddow
 
 $standard-shadow:  2px 3px 12px 0px $grey-shadow;
+$hover-shadow: 2px 3px 12px 0px $grey-light;
 
 //breakpoints:
 

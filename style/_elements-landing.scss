@@ -1,3 +1,6 @@
+
+//BANNER
+
 .banner{
     @extend %banner;
     box-shadow: $standard-shadow;
@@ -59,7 +62,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-left: 10px;
-        gap: 20px;
+        gap: $gap2;
         
     }
   
@@ -84,7 +87,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: $gap3;
     margin: 20px 0px 20px 10px;
 
     &:hover{
@@ -100,7 +103,7 @@
         padding: 8px 12px;
         margin-left: -15px;
         color: $white;
-        font-size: 14px;
+        font-size: $xm;
         text-align: center;
     }
     i, p{
@@ -112,7 +115,7 @@
 
     @include breakpoint ($tablet){
         margin: 0px 0px 10px 0px;
-        gap: 10px;
+        gap: $gap1;
         padding-right: 35px;
     }
    
@@ -126,7 +129,7 @@
     flex-direction:column;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: $gap2;
     background-color: $grey-background;
     padding-bottom: 70px;
     @include breakpoint ($tablet) {
@@ -202,10 +205,23 @@
             margin:0px 0px 15px 0px;
         }
         &-icon{
-            font-size:$xl-2;
-            i:nth-child(2){
-                color: linear-gradient($primary, $secondary); //ISSUES////////////////////
+            font-size:$xl-3;
+            .fa-solid{
+                background: linear-gradient(200deg, $primary, $secondary);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: none;
+                transform: scale(1);
+                transition: transform 1000ms;
             }
+            i:nth-child(1):hover{
+                display: none;
+            }
+            i:nth-child(1):hover +i:nth-child(2){
+                display:inline-block;
+                transform: scale(1.1);
+            }
+           
         }
     }
 
