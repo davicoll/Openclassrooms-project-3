@@ -44,9 +44,13 @@ a{
     border-radius: 30px;
     font-size: $md;
     font-weight: 400;
+    transition: 0.6s;
+    
+
     &:hover{
         box-shadow: $hover-shadow;
-        background-image: linear-gradient(to top left, lighten($primary ,5), lighten($secondary, 5));
+        opacity: 0.8;
+        
 
     }
 
