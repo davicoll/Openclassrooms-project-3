@@ -140,11 +140,13 @@
                 justify-content: flex-end;
                 align-items: flex-end;
                 gap: 5px;
+                
                 p{
                 font-weight: 500;
                 font-size: $md;
                 padding-right: 0px;
                 margin-right: -50px;
+                transition: 0.3s linear;
                 
                 }
                
@@ -189,11 +191,11 @@
             }
 
             &:hover .menu-cards-item-text{
-                max-width: 50%;
+                max-width: 65%;
             }
+
             &:hover .menu-cards-item-price p{
-                max-width: 30px;
-                margin-right: 10px;
+                transform: translateX(-60px)
 
             }
         }

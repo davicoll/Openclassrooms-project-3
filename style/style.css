@@ -1221,6 +1221,7 @@ footer-item {
   font-size: 16px;
   padding-right: 0px;
   margin-right: -50px;
+  transition: 0.3s linear;
 }
 .menu-cards-item-check {
   display: flex;
@@ -1249,11 +1250,10 @@ footer-item {
   transform: rotatez(360deg);
 }
 .menu-cards-item:hover .menu-cards-item-text {
-  max-width: 50%;
+  max-width: 65%;
 }
 .menu-cards-item:hover .menu-cards-item-price p {
-  max-width: 30px;
-  margin-right: 10px;
+  transform: translateX(-60px);
 }
 
 .button-menu {
