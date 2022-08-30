@@ -64,6 +64,7 @@
     gap: $gap2;
     width: 92%;
     margin-bottom: 30px;
+    
 
     @include breakpoint($desktop){
         flex-direction: row;
@@ -83,13 +84,11 @@
     
         }
         
-
         h2{
         font-size:$md;
         margin-bottom: 20px;
         border-bottom: 3px solid $tertiary;
         padding-bottom: 5px;
-        text-overflow: visible;
         width: 10%;
         
         @include breakpoint($desktop){
@@ -106,6 +105,7 @@
         align-items: flex-end;
         padding: 0px 0px 0px 10px;
         width: 100%;
+        overflow: hidden;
 
     
         @include breakpoint($desktop){
@@ -159,7 +159,7 @@
 ///////////////check animation//////////////////
             &-check{
                 display: flex;
-                opacity: 0;
+                
                 justify-content: center;
                 align-items: center;
                 min-width: 60px;
@@ -167,35 +167,25 @@
                 text-align: center;
                 border-radius: 0px 15px 15px 0px;
                 background-color: $tertiary;
-                transform: translate(50px);
-                transition: opacity 0.2s ease-out, transform 0.4s 0.1s ease-in-out ;
-            
-                
-            
+                transform: translate(60px);
+                transition: transform 0.3s linear;
                 i{
                     display: inline-block;
                     background-color: $white;
                     color: $tertiary;
                     border-radius: 100%;
                     padding: 3px;
-                    transition: 0.4s;
+                    transition: 0.3s 0.2s;
                     
                 }
            
-                
-
             }
-            &:hover  .menu-cards-item-check{
-                opacity: 1;
-                transform: translatex(0px);
-                
+            &:hover  .menu-cards-item-check{ 
+                transform: translatex(0px);       
                
             }
             &:hover .menu-cards-item-check i{
-                transform: rotatez(360deg);
-                
-                
-                   
+                transform: rotatez(360deg);      
             }
 
             &:hover .menu-cards-item-text{
@@ -204,7 +194,6 @@
             &:hover .menu-cards-item-price p{
                 max-width: 30px;
                 margin-right: 10px;
-                
 
             }
         }
