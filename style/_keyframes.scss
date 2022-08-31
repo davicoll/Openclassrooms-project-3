@@ -1,3 +1,66 @@
+//LOADER//
+
+@keyframes dish{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity:1;
+
+    }
+}
+
+@keyframes appear{
+    
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+@keyframes disapear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+
+}
+@keyframes spin{
+    0%{ transform: rotate(0deg);
+
+    }
+    25%{
+        opacity: 0.5;
+    }
+    45%{
+        opacity: 0.8;
+    }
+    70%{
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+
 @keyframes load{
     from {
         opacity: 0;
@@ -8,3 +71,15 @@
         transform: translateY(0px);
     }
 }
+
+//Function menu cards//
+
+@for $i from 1 through 4{
+    .menu-cards a:nth-child(#{$i}){
+        animation: load 1s;
+        animation-delay: $i * 300ms;
+        animation-fill-mode: backwards;
+        
+    }
+}
+

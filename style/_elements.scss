@@ -56,17 +56,6 @@ a{
 
 }
 
-//Function menu cards//
-
-@for $i from 1 through 100{
-    .menu-cards:nth-child(#{$i}){
-        animation: load 1s;
-        animation-delay: $i * 300ms;
-        
-    }
-}
-
-
 
 //FOOTER
 
@@ -136,6 +125,8 @@ footer{
         min-width: 10%;
     }
 }
+
+
 
 
 

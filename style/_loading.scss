@@ -1,0 +1,111 @@
+.test2{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test{
+    animation: appear 0.8s 2.5s both; 
+     
+    
+}
+.food{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap:$gap2;
+    margin-top: -100px;
+    
+    .loader-item{
+        font-size: 50px;
+        background: linear-gradient(170deg, $secondary, $primary-light);
+        background-clip: text;
+        color: transparent;
+        padding-top: 100px;
+        animation: dish 2.5s both;
+    }
+    
+}
+    
+   
+   
+
+.loader{
+    position: fixed;
+    left:0px;
+    top: 0px;
+    z-index: 10;
+    background-color: $grey;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: disapear 0.8s 2.5s both;
+    
+    p{
+        font-family: 'shrikhand';
+        font-size: $xl;
+        margin: 0;
+        background: linear-gradient(170deg, $primary, $tertiary);
+        background-clip: text;
+        color: transparent;
+       
+    }
+
+    .teste3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    &-circle{
+        border-radius: 52% 48% 32% 68% / 58% 31% 69% 42% ;
+        border: 4px solid $tertiary;
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        display: inline-block;
+        z-index: 100;
+        animation: spin 5s linear infinite;
+        position: relative;
+        top: 50%;
+        
+        
+        &:nth-child(2){
+            animation-delay:800ms;
+            animation-duration: 10s;
+            height: 240px;
+            width: 240px;
+            border-color: $primary;
+            margin-top: -250px;
+        
+            
+            
+        
+        }
+        &:nth-child(3){
+            
+            animation-delay:1.5s;
+            animation-duration: 15s;
+            height: 260px;
+            width: 260px;
+            border-color: $secondary;
+            margin-top: -250px;
+               
+        }
+        &:nth-child(1){
+            
+        }
+        
+
+    
+
+        
+    }
+}
