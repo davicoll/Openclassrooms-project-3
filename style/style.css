@@ -550,7 +550,7 @@ footer-item {
   transform: rotatez(360deg);
 }
 .menu-cards-item:hover .menu-cards-item-text {
-  max-width: 65%;
+  max-width: 55%;
 }
 .menu-cards-item:hover .menu-cards-item-price p {
   transform: translateX(-60px);
@@ -584,8 +584,8 @@ footer-item {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  -webkit-animation: disapear 0.1s 2.9s both, fade 0.5s 2.3s both;
-          animation: disapear 0.1s 2.9s both, fade 0.5s 2.3s both;
+  -webkit-animation: disapear 0s 2.9s both, fade 0.5s 2.3s both;
+          animation: disapear 0s 2.9s both, fade 0.5s 2.3s both;
 }
 .loader p {
   font-family: "shrikhand";
