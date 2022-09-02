@@ -405,13 +405,40 @@ footer-item {
 .banner-photo img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
-  min-height: 230px;
+  min-width: 100%;
+  height: 230px;
   margin-bottom: 0px;
 }
 @media (min-width: 600px) {
-  .banner-photo {
-    max-height: 220px;
+  .banner-photo img {
+    height: 250px;
+    -o-object-position: 0px -150px;
+       object-position: 0px -150px;
+  }
+}
+@media (min-width: 990px) {
+  .banner-photo img {
+    -o-object-position: 0px -300px;
+       object-position: 0px -300px;
+  }
+}
+@media (min-width: 600px) {
+  .banner-photo .photo-note {
+    -o-object-position: 0px -300px;
+       object-position: 0px -300px;
+  }
+}
+@media (min-width: 770px) {
+  .banner-photo .photo-note {
+    height: 250px;
+    -o-object-position: 0px -450px;
+       object-position: 0px -450px;
+  }
+}
+@media (min-width: 990px) {
+  .banner-photo .photo-note {
+    -o-object-position: 0px -600px;
+       object-position: 0px -600px;
   }
 }
 
@@ -432,7 +459,12 @@ footer-item {
 }
 .menu-rest h2 {
   font-family: "shrikhand";
-  font-size: 26px;
+  font-size: 22px;
+}
+@media (min-width: 355px) {
+  .menu-rest h2 {
+    font-size: 26px;
+  }
 }
 .menu-epd {
   display: flex;
@@ -458,6 +490,16 @@ footer-item {
 @media (min-width: 770px) and (min-width: 770px) {
   .menu-cards a {
     width: 31%;
+  }
+}
+@media (min-width: 770px) and (min-width: 770px) {
+  .menu-cards .note {
+    width: 48%;
+  }
+}
+@media (min-width: 770px) and (min-width: 990px) {
+  .menu-cards .note {
+    width: 23%;
   }
 }
 @media (min-width: 770px) {
@@ -550,7 +592,22 @@ footer-item {
   transform: rotatez(360deg);
 }
 .menu-cards-item:hover .menu-cards-item-text {
-  max-width: 55%;
+  max-width: 50%;
+}
+@media (min-width: 990px) {
+  .menu-cards-item:hover .menu-cards-item-text {
+    max-width: 60%;
+  }
+}
+@media (min-width: 770px) {
+  .menu-cards-item:hover .note-text {
+    max-width: 60%;
+  }
+}
+@media (min-width: 990px) {
+  .menu-cards-item:hover .note-text {
+    max-width: 45%;
+  }
 }
 .menu-cards-item:hover .menu-cards-item-price p {
   transform: translateX(-60px);
@@ -617,8 +674,8 @@ footer-item {
   margin: auto;
   display: inline-block;
   z-index: 100;
-  -webkit-animation: spin 5s linear infinite;
-          animation: spin 5s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
   position: relative;
   top: 50%;
 }
