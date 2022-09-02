@@ -37,10 +37,10 @@
 }
 @keyframes disapear{
     from{
-        translate: 0;
+        transform: translate(0%);
     }
     to{
-        translate: 100%;
+        transform:translate(100%);
     }
 }
 @keyframes spin{
@@ -80,9 +80,9 @@
 
 //Function menu cards//
 
-@for $i from 1 through 4{
+@for $i from 1 through 5{
     .menu-cards a:nth-child(#{$i}){
-        animation: load 1s;
+        animation: load 0.8s;
         animation-delay: $i * 300ms;
         animation-fill-mode: backwards;
         
